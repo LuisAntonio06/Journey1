@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletas de Colores - Inspiración para tu hogar</title>
+    <link rel="stylesheet" href="css/estilo_prueba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <script>
+        // Script simple para el efecto hover en las imágenes
+        document.querySelectorAll('.paletas__tarjeta').forEach(tarjeta => {
+            const imagen = tarjeta.querySelector('.paletas__imagen');
+            
+            tarjeta.addEventListener('mouseenter', () => {
+                imagen.classList.add('paletas__imagen--hover');
+            });
+            
+            tarjeta.addEventListener('mouseleave', () => {
+                imagen.classList.remove('paletas__imagen--hover');
+            });
+        });
+    </script>
+</body>
+</html>
