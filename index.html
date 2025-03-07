@@ -27,6 +27,7 @@
 
     <!-- EMPIEZA NAVEGACIÓN -->
     <header class="header">
+
         <div class="header__contenido contenedor">
             <div class="header__iconos">
                 <a href="#" class="header__enlace"><i class="fab fa-instagram"></i>Instagram</a>
@@ -67,7 +68,7 @@
     <!-- ACABA NAVEGACIÓN -->
 
     <!-- Empieza Hero -->
-    <div class="hero"></div>
+    <div class="hero__index"></div>
     <!-- Acaba Hero -->
 
     <!-- informacion__index -->
@@ -77,8 +78,8 @@
     </section>
 
     <!-- Empiezan Categorías -->
-    <section class="categorias">
-        <h2 class="categorias__heading">Categorías de productos</h2>
+    <section class="categorias" id="categoriasP">
+        <h2 class="categorias__heading" >Categorías de productos</h2>
 
         <div class="carousel-container">
             <div class="carousel">
@@ -101,7 +102,7 @@
                     </a>
                 </div>
                 <div class="slide">
-                    <img src="img/catAutomotriz.png" alt="Slide 4" class="slide-image">
+                    <img src="img/catAutomotrizP.jpg" alt="Slide 4" class="slide-image">
                     <a href="productos.html" class="slide-caption">
                         <span>AUTOMOTRIZ</span>
                     </a>
@@ -131,7 +132,7 @@
 
         <div class="contenedor">
             <h2 class="productos__titulo">Pinturas Vinílicas</h2>
-                <div class="productos__grid" data-aos="fade-up" >   
+                <div class="productos__grid">   
 
                 <!-- Empiezan Productos Grid-->
 
@@ -222,6 +223,9 @@
             </div>
             
         </div>
+
+
+        
 
     </main>
     
@@ -465,6 +469,121 @@
         </div>
     </section>
 
+        <!-- Sección de colores populares -->
+    <section class="colores__section">
+        <h2 class="carrusel__galeria-heading">Colores Populares</h2>
+        
+        <div class="contenedor">
+            <h2 class="carrusel__galeria-titulo">Selección de colores más </h2>
+            <div class="colores__grid">
+                <!-- Tarjeta de color 1 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--rojoPrimario)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Rojo Intenso</h3>
+                        <p class="color__codigo">#FF3131</p>
+                        <p class="color__descripcion">Ideal para espacios que necesitan energía y vitalidad</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 2 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--azulPrincipal)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Azul Marino</h3>
+                        <p class="color__codigo">#174B93</p>
+                        <p class="color__descripcion">Perfecto para crear ambientes elegantes y relajantes</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 3 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--verdePrimario)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Verde Naturaleza</h3>
+                        <p class="color__codigo">#589D62</p>
+                        <p class="color__descripcion">Transmite frescura y conexión con la naturaleza</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 4 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--amarilloOpaco)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Crema Suave</h3>
+                        <p class="color__codigo">#FAF7F3</p>
+                        <p class="color__descripcion">Tono neutro ideal para ampliar espacios</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 5 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--dorado)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Dorado Elegante</h3>
+                        <p class="color__codigo">#FFD700</p>
+                        <p class="color__descripcion">Añade un toque de lujo y sofisticación</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 6 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--grisOxford)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Gris Oxford</h3>
+                        <p class="color__codigo">#393D42</p>
+                        <p class="color__descripcion">Elegante y moderno para espacios contemporáneos</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 7 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--azulClaro)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Azul Cielo</h3>
+                        <p class="color__codigo">#B3C5FF</p>
+                        <p class="color__descripcion">Transmite tranquilidad y amplitud</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de color 8 -->
+                <div class="color__tarjeta">
+                    <div class="color__muestra" style="background-color: var(--naranjaPrimario)"></div>
+                    <div class="color__info">
+                        <h3 class="color__nombre">Coral Vibrante</h3>
+                        <p class="color__codigo">#E1306C</p>
+                        <p class="color__descripcion">Energético y moderno para espacios dinámicos</p>
+                        <div class="color__boton-contenedor">
+                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="complementos__section">
         <h2 class="complementos__heading">Más Productos</h2>
     
@@ -527,6 +646,75 @@
         </div>
     </section>
 
+
+    
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer__grid">
+    
+                <div class="footer__section">
+                    <div class="footer__enlaces">
+                        <h3 class="footer__subheading">Productos</h3>
+                        <a href="" class="footer__enlace">Arquitectónica</a>
+                        <a href="" class="footer__enlace">Automotriz</a>
+                        <a href="" class="footer__enlace">Aerosol</a>
+                        <a href="" class="footer__enlace">Colorantes y Adhesivos</a>
+                        <a href="" class="footer__enlace">Complementos</a>
+                    </div>
+                </div>
+    
+                <div class="footer__section">
+                    <div class="footer__enlaces">
+                        <h3 class="footer__subheading">Acerca de</h3>
+                        <a href="#categoriasP" class="footer__enlace">Categorías de productos</a>
+                        <a href="" class="footer__enlace">Nuestros productos</a>
+                        <a href="" class="footer__enlace">Eslogan</a>
+                        <a href="" class="footer__enlace">Mejores Combinaciones</a>
+                        <a href="" class="footer__enlace">Colores populares</a>
+                        <a href="" class="footer__enlace">Otros productos</a>
+                    </div>
+                </div>
+    
+                <div class="footer__section iconos__web">
+                    <div class="logo__pinturas">
+                        <a href="index.html" class="logo__footer">
+                            <img src="img/icono__memosPinturas.png" alt="Memos Pinturas"> 
+                            <p>Memo's Pinturas</p>
+                        </a>
+                    </div>
+                    <div class="redes__sociales">
+                        <h3 class="footer__subheading">Síguenos</h3>
+                        <div class="redes__iconos">
+                            <a href="https://www.instagram.com" class="redes__icono" target="_blank">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="https://wa.me/2491110478" class="redes__icono" target="_blank">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </a>
+                            <a href="https://www.facebook.com" class="redes__icono" target="_blank">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com" class="redes__icono" target="_blank">
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="redes__icono" target="_blank">
+                                <i class="fab fa-tiktok fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    
+    <div class="rights">
+        <p> &copy; 2025 Memo's Pinturas - Journey 2025</p>
+    </div>
+
+    
 
     <script src="js/appIndexNav.js"></script><!-- Script de la barra de navegación -->
 
