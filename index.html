@@ -13,8 +13,7 @@
     <!-- Fuentes google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,15 +23,14 @@
 </head>
 <body class="articulos__body"> 
     
-
     <!-- EMPIEZA NAVEGACIÓN -->
-    <header class="header">
+    <header class="header ">
 
         <div class="header__contenido contenedor">
             <div class="header__iconos">
                 <a href="#" class="header__enlace"><i class="fab fa-instagram"></i>Instagram</a>
                 <a href="#" class="header__enlace"><i class="fab fa-facebook-f"></i>Facebook</a>
-                <a href="#" class="header__enlace"><i class="fab fa-whatsapp"></i>WhatsApp </a>
+                <a href="https://wa.me/2491110478" class="header__enlace"><i class="fab fa-whatsapp"></i>WhatsApp </a>
             </div>
             <div class="header__acceder">
             </div>
@@ -56,9 +54,9 @@
                 
                 <div class="navegacion__enlaces" id="navegacion__enlaces">
                     <a href="productos.html" class="navegacion__enlace"><i class="fas fa-paint-roller"></i> Productos</a>
-                    <a href="#" class="navegacion__enlace"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
-                    <a href="#" class="navegacion__enlace"><i class="fas fa-envelope"></i> Contacto</a>
-                    <a href="#" class="navegacion__enlace-acceder">
+                    <a href="ubicacion.html" class="navegacion__enlace"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+                    <a href="contacto.html" class="navegacion__enlace"><i class="fas fa-envelope"></i> Contacto</a>
+                    <a href="login.html" class="navegacion__enlace-acceder">
                         <i class="fas fa-sign-in-alt"></i> <span class="acceder__texto">Acceder</span>
                     </a>
                 </div>
@@ -68,17 +66,19 @@
     <!-- ACABA NAVEGACIÓN -->
 
     <!-- Empieza Hero -->
-    <div class="hero__index"></div>
+    <div class="hero__index">
+        <h2 class="hero__heading">Memo's Pinturas <i class="fa-solid fa-brush"></i></h2>
+    </div>
     <!-- Acaba Hero -->
 
     <!-- informacion__index -->
-    <section class="index__contenido">
+    <section class="index__contenido" id="categoriasId">
         <h2 class="index__titulo">Memo's Pinturas</h2>
         <h3 class="index__subtitulo">Colores que inspiran, Calidad que perdura.</h3>
     </section>
 
     <!-- Empiezan Categorías -->
-    <section class="categorias" id="categoriasP">
+    <section class="categorias" >
         <h2 class="categorias__heading" >Categorías de productos</h2>
 
         <div class="carousel-container">
@@ -126,100 +126,95 @@
     </section>
     <!-- Acaban categorías -->
 
+    <h2 class="productos__heading" id="nuestrosProductosId">Nuestros Productos</h2>
+
+
     <!-- Empiezan Productos -->
-    <main class="productos">
-        <h2 class="productos__heading">Nuestros Productos</h2>
+    <section class="productos">
 
         <div class="contenedor">
-            <h2 class="productos__titulo">Pinturas Vinílicas</h2>
-                <div class="productos__grid">   
+            <h2 class="productos__subheading">
+                <i class="fas fa-house"></i> Pintura Arquitectónica
+            </h2>
 
-                <!-- Empiezan Productos Grid-->
-
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/productoImg_1.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura Vinílica</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Verde agua</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/productoImg_1.png" alt="Pintura Arquitectónica">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura Arquitectónica</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color:<span class="producto-color-valor"> Verde agua</span> </p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
                         </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #5DAE78;"></div>
                         </div>
                     </div>
-                 <!-- ACABA PRODUCTO -->
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/productoImg_2.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura Vinílica</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Azul Cielo</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/productoImg_2.png" alt="Pintura Arquitectónica">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura Arquitectónica</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color:<span class="producto-color-valor"> Verde agua</span> </p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
                         </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #3D7EC9;"></div>
                         </div>
                     </div>
-                 <!-- ACABA PRODUCTO -->
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/productoImg_3.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura Vinílica</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Semi Mate</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/productoImg_3.png" alt="Pintura Arquitectónica">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura Arquitectónica</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color:<span class="producto-color-valor"> Verde agua</span> </p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
                         </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #8B5A4C;"></div>
                         </div>
                     </div>
-                 <!-- ACABA PRODUCTO -->
-
-                 
-             <!-- Acaban Productos Grid-->
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -227,10 +222,10 @@
 
         
 
-    </main>
+    </section>
     
 
-    <section class="principal__producto"> 
+    <section class="principal__producto" id="esloganId"> 
         
         <div class="contenedor">
             
@@ -271,116 +266,109 @@
     
                     <!-- Botón de acción -->
                     <button class="principal__boton">
-                        <i class="fas fa-box"></i> <span class="principal__span">Ver más productos</span>
+                        <a href="productos.html" class="enlace__boton"><i class="fas fa-box"></i> <span class="principal__span">Ver más productos</span></a> 
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+
+    <!-- Empiezan Productos -->
+    <section class="productos">
+        <h2 class="productos__heading"></h2>
+
+        <div class="contenedor">
+            <h2 class="productos__subheading">
+                <i class="fa-solid fa-spray-can-sparkles"></i> Pintura en Aerosol
+            </h2>
+        
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/aerosolesImg_1.png" alt="Pintura en Aerosol Verde">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura en Aerosol</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color: <span class="producto-color-valor">Verde agua</span></p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
+                        </div>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #5DAE78;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/aerosolesImg_2.png" alt="Producto Imagen" class="producto__index">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura en Aerosol</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color: <span class="producto-color-valor">Verde agua</span></p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
+                        </div>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #3D7EC9;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/aerosolesImg_3.png" alt="Producto Imagen" class="producto__index">
+                    </div>
+                    
+                    <div class="producto-info">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Pintura en Aerosol</h3>
+                            <p class="producto-precio">Precio: <span>$500</span></p>
+                            <p class="producto-color-label">Color: <span class="producto-color-valor">Verde agua</span></p>
+                            <p class="producto-capacidad">Capacidad: <span>4 Lt</span></p>
+                        </div>
+                        
+                        <div class="color-muestra">
+                            <div class="color-circulo" style="background-color: #8B5A4C;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-accion">
+                        <button class="btn-ver-mas">
+                            Ver más de este producto <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
 
-
-    <!-- Empiezan Productos -->
-    <main class="productos">
-        <h2 class="productos__heading"></h2>
-
-        <div class="contenedor">
-            <h2 class="productos__titulo">Pinturas en Aerosol</h2>
-                <div class="productos__grid">   
-
-                <!-- Empiezan Productos Grid-->
-
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/aerosolesImg_1.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura en Aerosol</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Verde agua</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
-                        </div>
-                    </div>
-                 <!-- ACABA PRODUCTO -->
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/aerosolesImg_2.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura en Aerosol</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Verde agua</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
-                        </div>
-                    </div>
-                 <!-- ACABA PRODUCTO -->
-                    <div class="contenedor__producto">
-                        <div class="producto">
-                            <div class="producto__imagen">
-                                <img src="img/aerosolesImg_3.png" alt="Producto Imagen" class="producto__index">
-                            </div>
-                            
-                            <div class="producto__informacion">
-                                <div class="producto__texto">
-                                    <h3 class="producto__titulo">Pintura en Aerosol</h3>
-                                    <p class="producto__precio">Precio: <span class="producto__span">$500</span></p>
-                                    <p class="pintura__color">Color: </p>
-                                    <p class="color__pintura">Verde agua</p>
-                                    <p class="pintura__capacidad">Capacidad: <span class="capacidad__pintura">4 Lt</span></p>
-                                </div>
-                        
-                                <div class="producto__color">
-                                    <div class="color__producto"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="producto__boton-contenedor">
-                            <button class="producto__boton">
-                                Ver más de este producto <i class="fa-solid fa-fill-drip 2xl fa-lg"></i>
-                            </button>
-                        </div>
-                    </div>
-                 <!-- ACABA PRODUCTO -->
-
-                 
-             <!-- Acaban Productos Grid-->
-            </div>
-        </div>
-    </main>
-    
-
     <!-- Empieza Sección de Combinaciones -->
-    <section class="combinaciones">
+    <section class="combinaciones" id="combinacionesId">
         <h2 class="combinaciones__heading">Mejores Combinaciones</h2>
         <div class="contenedor">
         <h2 class="combinaciones__titulo">Inspiración para tu hogar</h2>
@@ -470,11 +458,11 @@
     </section>
 
         <!-- Sección de colores populares -->
-    <section class="colores__section">
+    <section class="colores__section" id="coloresId">
         <h2 class="carrusel__galeria-heading">Colores Populares</h2>
         
         <div class="contenedor">
-            <h2 class="carrusel__galeria-titulo">Selección de colores más </h2>
+            <h2 class="carrusel__galeria-titulo">Selección de colores más utilizados</h2>
             <div class="colores__grid">
                 <!-- Tarjeta de color 1 -->
                 <div class="color__tarjeta">
@@ -483,9 +471,7 @@
                         <h3 class="color__nombre">Rojo Intenso</h3>
                         <p class="color__codigo">#FF3131</p>
                         <p class="color__descripcion">Ideal para espacios que necesitan energía y vitalidad</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -496,9 +482,7 @@
                         <h3 class="color__nombre">Azul Marino</h3>
                         <p class="color__codigo">#174B93</p>
                         <p class="color__descripcion">Perfecto para crear ambientes elegantes y relajantes</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -509,9 +493,7 @@
                         <h3 class="color__nombre">Verde Naturaleza</h3>
                         <p class="color__codigo">#589D62</p>
                         <p class="color__descripcion">Transmite frescura y conexión con la naturaleza</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -522,9 +504,7 @@
                         <h3 class="color__nombre">Crema Suave</h3>
                         <p class="color__codigo">#FAF7F3</p>
                         <p class="color__descripcion">Tono neutro ideal para ampliar espacios</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -535,9 +515,7 @@
                         <h3 class="color__nombre">Dorado Elegante</h3>
                         <p class="color__codigo">#FFD700</p>
                         <p class="color__descripcion">Añade un toque de lujo y sofisticación</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -548,9 +526,7 @@
                         <h3 class="color__nombre">Gris Oxford</h3>
                         <p class="color__codigo">#393D42</p>
                         <p class="color__descripcion">Elegante y moderno para espacios contemporáneos</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -561,9 +537,7 @@
                         <h3 class="color__nombre">Azul Cielo</h3>
                         <p class="color__codigo">#B3C5FF</p>
                         <p class="color__descripcion">Transmite tranquilidad y amplitud</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
                 
@@ -574,9 +548,7 @@
                         <h3 class="color__nombre">Coral Vibrante</h3>
                         <p class="color__codigo">#E1306C</p>
                         <p class="color__descripcion">Energético y moderno para espacios dinámicos</p>
-                        <div class="color__boton-contenedor">
-                            <button class="color__boton">Ver color <i class="fas fa-eye"></i></button>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -584,7 +556,7 @@
     </section>
 
 
-    <section class="complementos__section">
+    <section class="complementos__section" id="complementosId">
         <h2 class="complementos__heading">Más Productos</h2>
     
         <div class="contenedor">
@@ -598,8 +570,8 @@
                     <div class="complemento__info">
                         <h3 class="complemento__nombre">Brochas</h3>
                         <p class="complemento__descripcion">Brochas profesionales para acabados perfectos</p>
-                        <div class="complemento__boton-contenedor">
-                            <button class="complemento__boton">Ver producto <i class="fas fa-arrow-right"></i></button>
+                        <div class="producto-accion">
+                            <button class="btn-ver-mas">Ver producto <i class="fas fa-brush"></i></button>
                         </div>
                     </div>
                 </div>
@@ -611,8 +583,8 @@
                     <div class="complemento__info">
                         <h3 class="complemento__nombre">Rodillos</h3>
                         <p class="complemento__descripcion">Rodillos para cubrir grandes superficies</p>
-                        <div class="complemento__boton-contenedor">
-                            <button class="complemento__boton">Ver producto <i class="fas fa-arrow-right"></i></button>
+                        <div class="producto-accion">
+                            <button class="btn-ver-mas">Ver producto <i class="fas fa-brush"></i></button>
                         </div>
                     </div>
                 </div>
@@ -624,8 +596,8 @@
                     <div class="complemento__info">
                         <h3 class="complemento__nombre">Cepillos</h3>
                         <p class="complemento__descripcion">Cepillos especiales para texturas y efectos</p>
-                        <div class="complemento__boton-contenedor">
-                            <button class="complemento__boton">Ver producto <i class="fas fa-arrow-right"></i></button>
+                        <div class="producto-accion">
+                            <button class="btn-ver-mas">Ver producto <i class="fas fa-brush"></i></button>
                         </div>
                     </div>
                 </div>
@@ -637,8 +609,8 @@
                     <div class="complemento__info">
                         <h3 class="complemento__nombre">Charolas</h3>
                         <p class="complemento__descripcion">Charolas resistentes para todo tipo de pinturas</p>
-                        <div class="complemento__boton-contenedor">
-                            <button class="complemento__boton">Ver producto <i class="fas fa-arrow-right"></i></button>
+                        <div class="producto-accion">
+                            <button class="btn-ver-mas">Ver producto <i class="fas fa-brush"></i></button>
                         </div>
                     </div>
                 </div>
@@ -656,23 +628,23 @@
                 <div class="footer__section">
                     <div class="footer__enlaces">
                         <h3 class="footer__subheading">Productos</h3>
-                        <a href="" class="footer__enlace">Arquitectónica</a>
-                        <a href="" class="footer__enlace">Automotriz</a>
-                        <a href="" class="footer__enlace">Aerosol</a>
-                        <a href="" class="footer__enlace">Colorantes y Adhesivos</a>
-                        <a href="" class="footer__enlace">Complementos</a>
+                        <a href="productos.html#arquitectonicaId" class="footer__enlace">Arquitectónica</a>
+                        <a href="productos.html#automotrizId" class="footer__enlace">Automotriz</a>
+                        <a href="productos.html#aerosolId" class="footer__enlace">Aerosol</a>
+                        <a href="productos.html#colorantesId" class="footer__enlace">Colorantes y Adhesivos</a>
+                        <a href="productos.html#complementosId" class="footer__enlace">Complementos</a>
                     </div>
                 </div>
     
                 <div class="footer__section">
                     <div class="footer__enlaces">
                         <h3 class="footer__subheading">Acerca de</h3>
-                        <a href="#categoriasP" class="footer__enlace">Categorías de productos</a>
-                        <a href="" class="footer__enlace">Nuestros productos</a>
-                        <a href="" class="footer__enlace">Eslogan</a>
-                        <a href="" class="footer__enlace">Mejores Combinaciones</a>
-                        <a href="" class="footer__enlace">Colores populares</a>
-                        <a href="" class="footer__enlace">Otros productos</a>
+                        <a href="index.html#categoriasId" class="footer__enlace">Categorías de productos</a>
+                        <a href="index.html#nuestrosProductosId" class="footer__enlace">Nuestros productos</a>
+                        <a href="index.html#esloganId" class="footer__enlace">Eslogan</a>
+                        <a href="index.html#combinacionesId" class="footer__enlace">Mejores Combinaciones</a>
+                        <a href="index.html#coloresId" class="footer__enlace">Colores populares</a>
+                        <a href="index.html#complementosId" class="footer__enlace">Otros productos</a>
                     </div>
                 </div>
     
@@ -717,13 +689,15 @@
     
 
     <script src="js/appIndexNav.js"></script><!-- Script de la barra de navegación -->
-
+    <script src="js/appProductoHref.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Carousel JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/appSwiper.js"></script>
+
+
 
 </body>
 </html>

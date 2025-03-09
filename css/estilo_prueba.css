@@ -1,0 +1,235 @@
+/* Variables de color y tipografía */
+:root {
+    --rojoPrimario: #ff3131;
+    --rojoSecundario: #ff5757;
+    --azulSecundario: #3b66ff;
+    --blanco: #ffffff;
+    --gris: #b3b2ae;
+    --azulPrincipal: #174b93;
+    --azulClaro: #b3c5ff;
+    --negro: #000;
+    --grisClaro: #f5f5f5;
+    --verdePrimario: #589d62;
+    --naranjaPrimario: #e1306c;
+    --amarilloOpaco: #FAF7F3;
+    --dorado: #FFD700;
+    --grisOxford: #393D42;
+    
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radio-borde: 8px;
+    --transicion: all 0.3s ease;
+
+    --fuente-principal: "Raleway", sans-serif;
+    --fuente-secundaria: "Montserrat", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Un rem va a ser igual a 10px */
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: var(--amarilloOpaco);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* SECCIÓN DE UBICACIÓN */
+.ubicacion {
+    padding: 5rem 0;
+}
+
+.ubicacion__titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: var(--negro);
+}
+
+/* Mapa a lo largo */
+.ubicacion__mapa {
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    height: 45rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* Estilos para el mapa de Leaflet */
+#mapa {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Información de contacto debajo del mapa */
+.ubicacion__contacto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.ubicacion__info-bloque {
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    flex: 1 1 22%;
+    min-width: 25rem;
+}
+
+.ubicacion__subtitulo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--azulSecundario);
+}
+
+.ubicacion__texto {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.ubicacion__texto i {
+    color: var(--azulSecundario);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+.ubicacion__horario {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--grisClaro);
+}
+
+.ubicacion__dia {
+    font-weight: 600;
+}
+
+.ubicacion__hora {
+    color: var(--gris);
+}
+
+.ubicacion__botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ubicacion__boton {
+    background-color: transparent;
+    border: 0.1rem solid var(--negro);
+    font-size: 1.4rem;
+    font-family: var(--fuente-principal);
+    color: var(--negro);
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.ubicacion__boton:hover {
+    background-color: var(--rojoSecundario);
+    color: var(--blanco);
+    border-color: transparent;
+}
+
+.ubicacion__boton i {
+    font-size: 1.6rem;
+}
+
+/* Estilos para el popup del marcador */
+.leaflet-popup-content {
+    font-family: var(--fuente-principal);
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.popup__titulo {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--azulSecundario);
+}
+
+.popup__direccion {
+    margin-bottom: 0.5rem;
+}
+
+.popup__enlace {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--azulSecundario);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.popup__enlace:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .ubicacion__info-bloque {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ubicacion__titulo {
+        font-size: 2.5rem;
+    }
+    
+    .ubicacion__mapa {
+        height: 35rem;
+    }
+    
+    .ubicacion__info-bloque {
+        flex: 1 1 100%;
+    }
+    
+    .ubicacion__subtitulo {
+        font-size: 1.8rem;
+    }
+    
+    .ubicacion__texto {
+        font-size: 1.5rem;
+    }
+    
+
+}
