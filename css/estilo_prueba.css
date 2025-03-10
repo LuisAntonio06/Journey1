@@ -76,7 +76,9 @@ img {
     height: 45rem;
     width: 100%;
     margin-bottom: 3rem;
-}
+    border: 0.2rem solid var(--grisOxfovd);
+
+}   
 
 /* Estilos para el mapa de Leaflet */
 #mapa {

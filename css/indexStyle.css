@@ -417,7 +417,7 @@
 
 /* INICIA HERO */ 
 
-.hero__index , .hero__productos, .hero__ubicacion {
+.hero__index , .hero__productos, .hero__ubicacion , .hero__contacto {
   background-size: cover; /* Ajusta el tamaño de la imagen para que se vea más alejada */
   background-repeat: no-repeat;
   background-position: center;
@@ -437,10 +437,17 @@
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url(../img/categoriaArquitectonica.jpg);
   height: 40rem;
 }
+
 .hero__ubicacion {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url(../img/tiendaMemosPinturas_1.jpg);
   height: 40rem;
 }
+
+.hero__contacto {
+  background-color: var(--rojoSecundario);
+  height: 40rem;
+}
+
 
 .hero__heading {
   margin-top: 12rem;
@@ -650,7 +657,7 @@
   margin-bottom: 3rem;
 }
 
-.productos__heading, .combinaciones__heading , .complementos__heading , .carrusel__galeria-heading, .ubicacion__heading {  
+.productos__heading, .combinaciones__heading , .complementos__heading , .carrusel__galeria-heading, .ubicacion__heading , .contacto__heading {  
   text-align: center;
   background-color: var(--azulSecundario);
   padding: 2rem;
@@ -658,8 +665,8 @@
   margin-bottom: 3rem;
   font-size: 2.4rem;
   text-transform: uppercase;
-
 }
+
 .productos__subheading  {
   font-weight: 700;
   margin-bottom: 5rem;
@@ -667,8 +674,6 @@
   position: relative;
   display: inline-block;
 }
-
-
 
 .productos__subheading::after {
   content: "";
@@ -693,9 +698,6 @@
       text-align: center;
     }
 }
-
-
-
 .complementos__titulo , .carrusel__galeria-titulo, .titulo__principal {
   text-align: center;
   margin: 5rem 0; 
@@ -893,6 +895,7 @@
   .main-title {
       font-size: 2rem;
   }
+  
 }
 
 
@@ -1806,8 +1809,10 @@
   overflow: hidden;
   box-shadow: var(--sombra);
   height: 45rem;
-  width: 100%;
+  width: 100% ;
   margin-bottom: 3rem;
+  border: 0.1rem solid var(--gris);
+
 }
 
 #mapa {
@@ -1816,7 +1821,7 @@
   z-index: 1;
 }
 
-.ubicacion__subheading {
+.ubicacion__subheading , .contacto__subheading {
   text-align: center;
   font-weight: 700;
   margin-bottom: 5rem;
@@ -1839,7 +1844,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
-  margin: 8rem 0;
+  margin: 0rem 0 8rem 0;
 }
 
 .ubicacion__info-bloque {
@@ -1849,6 +1854,7 @@
   box-shadow: var(--sombra);
   flex: 1 1 22%;
   min-width: 25rem;
+  border: 0.1rem solid var(--gris);
 }
 
 .ubicacion__subtitulo {
@@ -1979,6 +1985,170 @@
   .ubicacion__texto {
       font-size: 1.5rem;
   }
-  
+}
 
+/* Empieza contacto */
+.contacto {
+  margin: 5rem 0 10rem 0;
+}
+
+.contacto__grid {
+  display: grid;
+  grid-template-columns:  repeat(3,1fr);
+}
+
+.contacto__formulario {
+  grid-column: 1/3;
+  padding: 3rem;
+}
+
+
+.contacto__datos {
+  grid-column: 3/4;
+  background-color: var(--rojoSecundario);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+}
+
+.formulario__contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.formulario__contacto-heading {
+  font-weight: 500;
+}
+
+.formulario__contacto input ,textarea { 
+  font-family: var(--fuente-principal);
+  font-size: 1.8rem;
+
+  padding: 1rem; 
+}
+
+
+.asunto__contacto {
+  height: 14rem;
+}
+
+
+
+/* Tarjetas Contacto */
+/* From Uiverse.io by codebykay101 */ 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+  color: var(--blanco);
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+
+.glass i {
+  font-size: 3rem;
+}
+
+.contacto__info {
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--blanco);
+}
+
+.contacto__datos-subfrase {
+  font-size: 1.2rem;
+
+}
+
+@media (max-width:992px) {
+  .contacto__grid {
+    grid-template-columns: repeat(1,1fr);
+
+  }
+
+  .contacto__formulario,.contacto__datos {
+    grid-column: 1/1;
+  }
+
+  .contacto__datos {
+    grid-row: 1/3;
+  }
+
+
+  
+  .contacto__datos {
+    display: none;
+
+  }
+  
+}
+
+
+.submit__contacto {
+  background-color: transparent;
+  border: 0.1rem solid  var(--negro);
+  font-weight: 500;
+  width: 40%;
+  transition: color 300ms , background-color 300ms , border-color 300ms ,font-weight 300ms;
+  border-radius: 0.5rem;
+
+}
+
+.submit__contacto:hover {
+  cursor: pointer;
+  color: var(--blanco);
+  background-color: var(--rojoSecundario);
+  border-color: var(--rojoSecundario);
+  font-weight: 700;
+}
+
+@media (max-width:767px) {
+    .submit__contacto {
+      width: 100%;
+    }
 }
